@@ -1,42 +1,31 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.navegacion {
+  background-color: rgb(227, 227, 227); /* Color de fondo */
+  margin-bottom: 4rem; /* Margen inferior */
+  color: #505050;
+  padding: 10px 50px; /* Relleno, 10 arriba y abajo, 5 izquierda y derecha */
+  display: grid; /* Mostrar como grid */
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Distribuir en columnas */
+  gap: 2rem; /* Espacio entre elementos */
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 1.2rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.navegacion a:hover {
+  color: #000;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.footer {
+  background-color: rgb(227, 227, 227);
+  color: #505050;
+  display: flex;
+  padding: 1rem;
+  text-align: center;
+  position: fixed;
+  gap: 1rem;
+  bottom: 0;
+  width: 100%;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.footer a:hover {
+  color: #505050;
 }
