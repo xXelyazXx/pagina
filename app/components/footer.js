@@ -3,8 +3,8 @@ import { FaYoutube, FaInstagram, FaPhone } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <div className="footer">
-      <Box>
+    <nav className="navegacion">
+      <Box width="70px" height="70px">
         <p>Iglesia FVN</p>
         <Image src="/imagenes/images-removebg-preview.png" alt="logo" boxSize="70px" />
       </Box>
@@ -23,6 +23,6 @@ export default function Footer() {
         correo: correo@gmail.com
         <FaPhone size="2rem" />
       </Box>
-    </div>
+    </nav>
   );
 }

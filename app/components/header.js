@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
-import { Box, Image, Link, Collapse, useDisclosure, useMediaQuery, Button } from '@chakra-ui/react';
+import { Box, Image, Link, Collapse, useDisclosure, useMediaQuery, Button, Icon } from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
 
 const links = [
   { nombre: "Acerca de nosotros", url: "/acerca" },
@@ -23,7 +24,9 @@ export default function Header() {
       </Box>
       {isSmallScreen ? (
         <>
-          <Button onClick={onToggle}>Menu</Button>
+          <Button onClick={onToggle} background="transparent">
+            <Icon as={HamburgerIcon} w={6} h={6} />
+          </Button>
           <Collapse in={isOpen} animateOpacity>
             <Box
               position="absolute"
