@@ -1,7 +1,8 @@
 "use client"
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Box, Button, Image, Flex } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
+
 
 const images = {
   1: '/imagenes/paisaje1.jpg',
@@ -22,6 +23,13 @@ export default function Home() {
     setCurrentImage((prev) => ( prev === 1 ? totalImages : prev - 1));
   };
 
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      handleNext();
+    },3000);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div>
       <Box position="relative" width="100%" height="100%" overflow="hidden">
