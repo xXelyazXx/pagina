@@ -1,6 +1,16 @@
 "use client"
 import { useState } from 'react';
-import { Box, Image, Link, Collapse, useDisclosure, useMediaQuery, Button, Icon } from '@chakra-ui/react';
+import { 
+  Box, 
+  Image, 
+  Link, 
+  Collapse, 
+  useDisclosure, 
+  useMediaQuery, 
+  Button, 
+  Icon 
+} from '@chakra-ui/react';
+
 import { HamburgerIcon } from '@chakra-ui/icons';
 
 const links = [
@@ -13,58 +23,51 @@ const tamanoImagen = "70px";
 
 export default function Header() {
   const { isOpen, onToggle, onClose } = useDisclosure();
-  const [isSmallScreen] = useMediaQuery("(max-width: 600px)");
 
   return (
-    <nav className="navegacion">
+    <nav className="header">
       <Box width={tamanoImagen} height={tamanoImagen}>
         <Link href="/">
-          <Image src="/imagenes/images-removebg-preview.png" alt="logo" boxSize={tamanoImagen} />
+          <Image 
+          src="/imagenes/images-removebg-preview.png" 
+          alt="logo" 
+          boxSize={tamanoImagen} 
+          objectFit="contain"
+          />
         </Link>
       </Box>
-      {isSmallScreen ? (
-        <>
-          <Button onClick={onToggle} background="transparent">
-            <Icon as={HamburgerIcon} w={6} h={6} />
+      Iglesia Fuente de Vida Para Las Naciones
+      <Box ml="auto">
+        <Button onClick={onToggle} background="transparent" >
+          <Icon as={HamburgerIcon} w={6} h={6} />
+        </Button>
+      </Box>
+      <Collapse in={isOpen} animateOpacity>
+        <Box
+          position="absolute"
+          top="0"
+          left="0"
+          width="100%"
+          height="100vh"
+          bg="white"
+          zIndex="10"
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+        >
+          <Button onClick={onClose} position="absolute" top="10px" right="10px">
+            Cerrar
           </Button>
-          <Collapse in={isOpen} animateOpacity>
-            <Box
-              position="absolute"
-              top="0"
-              left="0"
-              width="100%"
-              height="100vh"
-              bg="white"
-              zIndex="10"
-              display="flex"
-              flexDirection="column"
-              alignItems="center"
-              justifyContent="center"
-            >
-              <Button onClick={onClose} position="absolute" top="10px" right="10px">
-                Cerrar
-              </Button>
-              {links.map((link) => (
-                <Box key={link.url} margin="10px 0">
-                  <Link href={link.url}>
-                    {link.nombre}
-                  </Link>
-                </Box>
-              ))}
-            </Box>
-          </Collapse>
-        </>
-      ) : (
-        <Box display="flex" flexDirection="row" alignItems="center">
           {links.map((link) => (
-            <Box key={link.url} margin="10px">
+            <Box key={link.url} margin="10px 0">
               <Link href={link.url}>
                 {link.nombre}
               </Link>
             </Box>
           ))}
         </Box>
-      )}
+      </Collapse>
     </nav>
   );
 }

@@ -3,10 +3,15 @@ import { FaYoutube, FaInstagram, FaPhone } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <nav className="navegacion">
-      <Box width="70px" height="70px">
+    <nav className="footer">
+      <Box width="70px" height="100hv">
         <p>Iglesia FVN</p>
-        <Image src="/imagenes/images-removebg-preview.png" alt="logo" boxSize="70px" />
+        <Image 
+        src="/imagenes/images-removebg-preview.png" 
+        alt="logo" 
+        boxSize="70px"
+        objectFit="contain" 
+        />
       </Box>
       <Box display="flex" justifyContent="center" alignItems="center" gap="2rem">
         <Link href="https://www.youtube.com/@FVNIglesia" isExternal>
