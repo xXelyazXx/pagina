@@ -22,11 +22,6 @@ export default function Footer() {
           Encuentranos en instagram:
           <FaInstagram size="2rem" />
         </Link>
-        <p>
-          Contactos:
-        </p>
-        correo: correo@gmail.com
-        <FaPhone size="2rem" />
       </Box>
     </nav>
   );

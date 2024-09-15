@@ -2,6 +2,7 @@
 .header {
   background-color: rgb(227, 227, 227); /* Color de fondo */
   color: #505050;
+  margin-bottom: 1rem;
   padding: 10px 5px; /* Relleno, 10 arriba y abajo, 5 izquierda y derecha */
   display: flex; /* Mostrar como flex */
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Distribuir en columnas */
@@ -23,27 +24,62 @@
   background-color: rgb(227, 227, 227); /* Color de fondo */
   color: #505050;
   padding: 10px 5px; /* Relleno, 10 arriba y abajo, 5 izquierda y derecha */
-  display: flex; /* Mostrar como grid */
+  display: flex; /* Mostrar como flex */
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Distribuir en columnas */
   gap: 2rem; /* Espacio entre elementos */
   border-bottom: 1px solid #e1e1e1;
   font-size: 1.2rem;
+  margin-top: 1rem;
 }
 
 .footer a:hover {
   color: #505050;
 }
 
-.responsive-video {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+.slider-container {
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  margin: auto;
+  border-radius: 15px;
+
+  position: relative;
 }
 
-@media (max-width: 768px) {
-  .responsive-video {
-    width: 100%;
-    height: auto;
-  }
+/* Asegurarse de que cada slide ocupe todo el espacio del contenedor */
+.slide {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Asegurarse de que las imágenes ocupen todo el espacio del slide */
+.slider-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50px;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
 }
