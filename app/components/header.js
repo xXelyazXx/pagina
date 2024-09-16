@@ -36,7 +36,7 @@ export default function Header() {
           />
         </Link>
       </Box>
-      Iglesia Fuente de Vida Para Las Naciones
+      Iglesia Fuente de Vida.
       <Box ml="auto">
         <Button onClick={onToggle} background="transparent" >
           <Icon as={HamburgerIcon} w={6} h={6} />
@@ -55,6 +55,7 @@ export default function Header() {
           flexDirection="column"
           alignItems="center"
           justifyContent="center"
+          color={"black"}
         >
           <Button onClick={onClose} position="absolute" top="10px" right="10px">
             Cerrar

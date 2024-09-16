@@ -1,7 +1,7 @@
 
 .header {
-  background-color: rgb(227, 227, 227); /* Color de fondo */
-  color: #505050;
+  background-color: rgb(23, 19, 138); /* Color de fondo */
+  color: #ffffff;
   margin-bottom: 1rem;
   padding: 10px 5px; /* Relleno, 10 arriba y abajo, 5 izquierda y derecha */
   display: flex; /* Mostrar como flex */
@@ -21,8 +21,8 @@
 }
 
 .footer {
-  background-color: rgb(227, 227, 227); /* Color de fondo */
-  color: #505050;
+  background-color: rgb(0, 0, 0); /* Color de fondo */
+  color: #ffffff;
   padding: 10px 5px; /* Relleno, 10 arriba y abajo, 5 izquierda y derecha */
   display: flex; /* Mostrar como flex */
   grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Distribuir en columnas */
