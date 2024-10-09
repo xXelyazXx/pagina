@@ -4,7 +4,7 @@ import { Box, Button, Image, Flex, Card } from '@chakra-ui/react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import ImageSlider from './components/imageSlider';
 import GridInfo from './components/gridInfo';
-
+import Stream from './components/Stream';
 
 
 export default function Home() {
@@ -12,6 +12,7 @@ export default function Home() {
     <div>
         <ImageSlider />
         <GridInfo />
+        <Stream />
     </div>
   );
 }

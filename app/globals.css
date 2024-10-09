@@ -40,7 +40,7 @@
   margin-left: 20px;
   margin-right: 20px;
   overflow: hidden;
-  margin: auto;
+  margin: 1.5rem;
   border-radius: 15px;
 
   position: relative;
@@ -82,4 +82,10 @@
 
 .next {
   right: 10px;
+}
+
+.Stream {
+  display: flex;
+  margin: 1.5rem;
+  border-radius: 15px;
 }
