@@ -18,12 +18,12 @@ export default function GridInfo() {
         {
             url: "/imagenes/paisaje1.jpg",
             titulo: "Bienvenidos",
-            contenido: "Informacion de la iglesia"
+            contenido: "-Historia FVN\n -Misión\n -Visión\n -Somos una iglesia adoradora"
         },
         {
             url: "/imagenes/paisaje2.jpeg",
             titulo: "Grupos de vida",
-            contenido: "Informacion de la iglesia"
+            contenido: "-GDV HOMBRES DD y HH\n -GDV MUJERES DD y HH\n -GDV JOVENES DD y HH\n -GDV TWEENS DD y HH\n -GDV YOUTH DD y HH"
         },
         {
             url: "/imagenes/paisaje3.jpg",
@@ -42,18 +42,19 @@ export default function GridInfo() {
             >
                 {Informacion.map((informacion) => (
                     <GridItem key={informacion.titulo}>
-                        <Card key={informacion.titulo} className="carta" mb={2} size="sm" borderRadius="15">
+                        <Card key={informacion.titulo} mb={2} size="sm" borderRadius="15">
                             <CardHeader>{informacion.titulo}</CardHeader>
-                            <CardBody>
+                            <CardBody margin="10px">
                                 <Image
                                     src={informacion.url}
                                     alt="imagen"
                                     borderRadius="lg"
                                     className='slider-image'
+                                    
                                 />
                             </CardBody>
                             <CardFooter>
-                                <p>{informacion.contenido}</p>
+                                <p style={{ whiteSpace: 'pre-line' }}>{informacion.contenido}</p>
                             </CardFooter>
                         </Card>
                     </GridItem>

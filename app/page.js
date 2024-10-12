@@ -5,7 +5,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import ImageSlider from './components/imageSlider';
 import GridInfo from './components/gridInfo';
 import Stream from './components/Stream';
-
+import Conversemos from './components/Conversemos';
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <ImageSlider />
         <GridInfo />
         <Stream />
+        <Conversemos />
     </div>
   );
 }

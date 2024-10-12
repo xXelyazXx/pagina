@@ -6,23 +6,22 @@ import './Stream.css';
 export default function Stream() {
     return (
         <div className="a">
+            <Link href="https://www.youtube.com/@FVNIglesia/streams" isExternal>
+                <div className="container">
+                    <img
+                        src="/imagenes/paisaje1.jpg"
+                        alt="Descripción de la imagen"
+                        className="image"
+                    />
+                    <div className="overlay">
 
-        <Link href="https://www.youtube.com/@FVNIglesia" isExternal>
-        <div className="container">
-            <img
-                src="/imagenes/paisaje1.jpg"
-                alt="Descripción de la imagen"
-                className="image"
-            />
-            <div className="overlay">
-                
-                <h2 className="text">Transmisiones en vivo <br /> <h3 className="text2">mira las ultimas transmisiones dominicales</h3> </h2>
-                
-                <button className="button">Ver Ahora</button>
-            </div>
+                        <h3 className="text">Transmisiones en vivo </h3>
+                        <h2 className="text2">mira las ultimas transmisiones dominicales</h2>
+
+                        <button className="button">Ver Ahora</button>
+                    </div>
+                </div>
+            </Link>
         </div>
-        </Link>
-        </div>
-        
     );
 }

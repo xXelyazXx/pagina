@@ -1,0 +1,12 @@
+.Titulo {
+    text-align: center;
+    font-size: 35px; /* Puedes ajustar el tamaño de la fuente según tus necesidades */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente según tus necesidades */
+    margin-top: 25px; /* Puedes ajustar el margen superior según tus necesidades */
+    margin-bottom: 25px;
+}
+
+.Card {
+    
+    background-color: #f9f9f9;
+}

@@ -3,6 +3,7 @@
   position: relative;
   width: 100%; /* Ajusta el tamaño según sea necesario */
   max-width: 800px; /* Ancho máximo de la imagen */
+  margin-top: 20px; /* Ajusta el margen superior según tus necesidades */
   
 }
 
@@ -30,7 +31,12 @@
 }
 
 .text2 {
+  position: absolute;
+  top: 40px; /* Ajusta según la distancia que quieras desde la parte superior */
+  left: 10px; /* Ajusta según la distancia que quieras desde el lado izquierdo */
   font-size: 18px;
+  color: white;
+  margin: 0;
 }
 
 .button {
@@ -54,4 +60,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 20px;
+  margin-right: 20px;
 }
