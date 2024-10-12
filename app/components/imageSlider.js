@@ -4,7 +4,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from '@chakra-ui/icons';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "./ImageSlider.css";
+import "./imageSlider.css";
 
 function ImageSlider() {
     const [images] = useState([
