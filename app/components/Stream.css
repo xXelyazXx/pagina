@@ -21,23 +21,6 @@
   height: 100%;
 }
 
-.text {
-  position: absolute;
-  top: 10px; /* Ajusta según la distancia que quieras desde la parte superior */
-  left: 10px; /* Ajusta según la distancia que quieras desde el lado izquierdo */
-  font-size: 24px;
-  color: white;
-  margin: 0;
-}
-
-.text2 {
-  position: absolute;
-  top: 40px; /* Ajusta según la distancia que quieras desde la parte superior */
-  left: 10px; /* Ajusta según la distancia que quieras desde el lado izquierdo */
-  font-size: 18px;
-  color: white;
-  margin: 0;
-}
 
 .button {
   position: absolute;
@@ -62,4 +45,43 @@
   align-items: flex-start;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+.text {
+  position: absolute;
+  top: 2vh; /* Ajusta según la distancia que quieras desde la parte superior */
+  left: 2vw; /* Ajusta según la distancia que quieras desde el lado izquierdo */
+  font-size: 2.4vw; /* Ajusta el tamaño de fuente relativo al ancho de la ventana */
+  color: white;
+  margin: 0;
+}
+
+.text2 {
+  position: absolute;
+  top: 7vh; /* Ajusta según la distancia que quieras desde la parte superior */
+  left: 2vw; /* Ajusta según la distancia que quieras desde el lado izquierdo */
+  font-size: 1.8vw; /* Ajusta el tamaño de fuente relativo al ancho de la ventana */
+  color: white;
+  margin: 0;
+}
+
+/* Media queries para ajustar en diferentes tamaños de pantalla */
+@media (max-width: 768px) {
+  .text {
+    font-size: 4vw;
+  }
+
+  .text2 {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .text {
+    font-size: 5vw;
+  }
+
+  .text2 {
+    font-size: 4vw;
+  }
 }

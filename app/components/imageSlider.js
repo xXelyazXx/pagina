@@ -9,7 +9,7 @@ import "./imageSlider.css";
 function ImageSlider() {
     const [images] = useState([
         { url: "/imagenes/paisaje1.jpg", link: "NULL" },
-        { url: "/imagenes/paisaje2.jpeg", link: "/gdv" },
+        { url: "/imagenes/paisaje2.jpeg", link: "NULL" },
         { url: "/imagenes/paisaje3.jpg", link: "NULL" },
     ]);
 

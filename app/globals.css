@@ -1,3 +1,6 @@
+.fondo {
+  background-color: rgb(237, 237, 237);
+}
 
 .header {
   background-color: rgb(23, 19, 138); /* Color de fondo */
@@ -34,4 +37,27 @@
 
 .footer a:hover {
   color: #505050;
+}
+
+.section1 {
+  background-color: #f0f8ff; /* Color de fondo para la primera sección */
+  padding: 50px;
+  text-align: center;
+}
+
+.section2 {
+  background-color: #bfc0d8; /* Color de fondo para la segunda sección */
+  padding: 50px;
+  text-align: center;
+}
+
+.section3 {
+  padding: 50px;
+  text-align: center;
+}
+
+.section4 {
+  background-color: #bfc0d8; /* Color de fondo para la segunda sección */
+  padding: 50px;
+  text-align: center;
 }
