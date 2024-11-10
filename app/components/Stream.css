@@ -55,33 +55,15 @@
   color: white;
   margin: 0;
 }
-
-.text2 {
-  position: absolute;
-  top: 7vh; /* Ajusta según la distancia que quieras desde la parte superior */
-  left: 2vw; /* Ajusta según la distancia que quieras desde el lado izquierdo */
-  font-size: 1.8vw; /* Ajusta el tamaño de fuente relativo al ancho de la ventana */
-  color: white;
-  margin: 0;
-}
-
 /* Media queries para ajustar en diferentes tamaños de pantalla */
 @media (max-width: 768px) {
   .text {
     font-size: 4vw;
-  }
-
-  .text2 {
-    font-size: 3vw;
   }
 }
 
 @media (max-width: 480px) {
   .text {
     font-size: 5vw;
-  }
-
-  .text2 {
-    display: none;
   }
 }

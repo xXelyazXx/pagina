@@ -1,5 +1,6 @@
 import { Box, Link, Image } from '@chakra-ui/react';
 import { FaYoutube, FaInstagram, FaPhone } from 'react-icons/fa';
+import "./footer.css";
 
 export default function Footer() {
   return (

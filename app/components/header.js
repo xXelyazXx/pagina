@@ -1,17 +1,15 @@
 "use client"
-import { useState } from 'react';
 import { 
   Box, 
   Image, 
   Link, 
   Collapse, 
   useDisclosure, 
-  useMediaQuery, 
   Button, 
   Icon 
 } from '@chakra-ui/react';
-
 import { HamburgerIcon } from '@chakra-ui/icons';
+import "./header.css";
 
 const links = [
   { nombre: "Acerca de nosotros", url: "/acerca" },

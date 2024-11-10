@@ -5,6 +5,11 @@ import {
     CardFooter,
     SimpleGrid,
     Image,
+    Text,
+    Box,
+    Button,
+    Flex,
+    Center,
 } from '@chakra-ui/react';
 import react from 'react';
 import './Conversemos.css';
@@ -15,36 +20,51 @@ export default function Conversemos() {
             <div className="Titulo">
                 Conversemos
             </div>
-            <SimpleGrid 
-            columns={2} 
-            spacing={10} 
-            templateColumns={{base: 'repeat(1, 1fr)', sm: 'repeat(2, 1fr)'}}
-            mx="25px"
+            <SimpleGrid
+                columns={2}
+                spacing={10}
+                templateColumns={{ base: 'repeat(1, 1fr)', sm: 'repeat(2, 1fr)' }}
+                mx="25px"
             >
-                <Card className="Card">
-                    <CardHeader>
-                        <h1>Consejeria</h1>
-                    </CardHeader>
-                    <CardBody>
-                        <Image src='/imagenes/paisaje1.jpg' alt="imagen" borderRadius="lg" className='slider-image'/>
+                {/* Card Conversemos */}
+                <Card>
+                    <Box position="relative">
+                        <Image src='/imagenes/paisaje1.jpg' alt="imagen" borderRadius="lg" className='slider-image' />
+                        <Text className="texto">
+                            Conversemos
+                        </Text>
+                    </Box>
+                    <CardBody >
+                        <Text fontSize="2xl"> Si necesita una audiencia con nuestros pastores </Text>
                     </CardBody>
                     <CardFooter>
-                        <p>Proximo Boton a Formulario</p>
+                        <Button colorScheme="blue" variant="solid" width="100%">
+                            <Text> Complete el formulario </Text>
+                        </Button>
                     </CardFooter>
                 </Card>
-                <Card className="Card">
-                    <CardHeader>
-                        <h1>Oracion</h1>
-                    </CardHeader>
-                    <CardBody>
-                        <Image src='/imagenes/paisaje2.jpeg' alt="imagen" borderRadius="lg" className='slider-image'/>
+                {/* */}
+
+                {/* Card Oracion */}
+                <Card>
+                    <Box position="relative">
+                        <Image src='/imagenes/paisaje2.jpeg' alt="imagen" borderRadius="lg" className='slider-image' />
+                        <Text className="texto">
+                            Oración
+                        </Text>
+                    </Box>
+                    <CardBody >
+                        <Text fontSize="2xl"> Si está pasando necesidad y necesita oración </Text>
                     </CardBody>
                     <CardFooter>
-                        <p>Proximo Boton a Formulario</p>
+                        <Button colorScheme="blue" variant="solid" width="100%">
+                            <Text> Complete el formulario </Text>
+                        </Button>
                     </CardFooter>
                 </Card>
+                {/* */}
+
             </SimpleGrid>
-            
         </div>
     );
 }

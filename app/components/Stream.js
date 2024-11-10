@@ -16,7 +16,6 @@ export default function Stream() {
                     <div className="overlay">
 
                         <h3 className="text">Transmisiones en vivo </h3>
-                        <h2 className="text2">mira las ultimas transmisiones dominicales</h2>
 
                         <button className="button">Ver Ahora</button>
                     </div>
