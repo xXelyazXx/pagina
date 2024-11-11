@@ -42,7 +42,7 @@ export default function GridInfo() {
             >
                 {Informacion.map((informacion) => (
                     <GridItem key={informacion.titulo}>
-                        <Card key={informacion.titulo} mb={2} size="sm" borderRadius="15">
+                        <Card key={informacion.titulo} mb={2} size="sm" borderRadius="15" background="white">
                             <CardHeader>{informacion.titulo}</CardHeader>
                             <CardBody margin="10px">
                                 <Image

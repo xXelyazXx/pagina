@@ -3,6 +3,7 @@ import ImageSlider from './components/imageSlider';
 import GridInfo from './components/gridInfo';
 import Stream from './components/Stream';
 import Conversemos from './components/Conversemos';
+import NuestroColegio from './components/NuestroColegio';
 
 export default function Home() {
   return (
@@ -25,6 +26,11 @@ export default function Home() {
       {/* Conversemos */}
       <section className="section4">
         <Conversemos />
+      </section>
+
+      {/* Nuestro Colegio */}
+      <section className="section5">
+        <NuestroColegio />
       </section>
     </>
   );

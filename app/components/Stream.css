@@ -55,6 +55,7 @@
   color: white;
   margin: 0;
 }
+
 /* Media queries para ajustar en diferentes tamaños de pantalla */
 @media (max-width: 768px) {
   .text {

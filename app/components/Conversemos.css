@@ -16,7 +16,7 @@
     top: 2vh;
     left: 2vw;
     color: white;
-    font-Size: 1.8vw;
+    font-Size: 2vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -24,7 +24,7 @@
         font-size: 30px;
     }
     .texto {
-        font-size: 3vw;
+        font-size: 4vw;
     }
     
 }
