@@ -9,8 +9,6 @@ export default function Home() {
     <div>
       <div className="container-Anuncios">
         <Anuncios />
-      </div>
-      <div className="container-Bienvenida">
         <Bienvenida />
       </div>
       <div className="container-Transmision">

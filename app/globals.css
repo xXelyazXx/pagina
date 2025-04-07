@@ -1,6 +1,21 @@
 /* estilos del carrusel */
 @import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
+@import url('https://unpkg.com/leaflet@1.9.4/dist/leaflet.css');
+
+@font-face {
+  font-family: "LibreCaslonText-Regular";
+  src: url('/fonts/LibreCaslonText-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PatricHand-Bold";
+  src: url('/fonts/LibreCaslonText-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 :root {
   --background: #e0bd94;
@@ -9,13 +24,15 @@
 
 body {
   background-color: var(--background);
+  font-family: 'LibreCaslonText-Regular', sans-serif;
 }
 
 /* Anuncios */
 
 .container-Anuncios {
-  margin-left: 1.5rem;
-  margin-right: 1.5rem; 
+  background-color: var(--foreground);
+  padding: 2rem;
+  gap: 2rem;
 }
 
 .carousel-container {
@@ -47,7 +64,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  border: black 1px solid;
+  padding: 1rem;
 }
 
 .grid-container {
@@ -84,9 +101,11 @@ body {
 /* Transmision */
 
 .container-Transmision{
+  background-color: #906f49;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
 }
 
 /* Consejeria */
