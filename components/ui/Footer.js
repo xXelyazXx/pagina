@@ -5,7 +5,7 @@ import { FaInstagram, FaYoutube, FaPhone, FaMapMarkerAlt, FaEnvelope } from "rea
 const Footer = () => {
   return (
     <Box bg="gray.800" color="white" px={6} py={10} >
-      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10}>
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={10} gap={10}>
         {/* Contacto */}
         <Stack spacing={3}>
           <Text fontSize="lg" fontWeight="bold">Contacto</Text>
@@ -27,10 +27,13 @@ const Footer = () => {
         {/* Ubicación y Horarios */}
         <Stack spacing={3}>
           <Text fontSize="lg" fontWeight="bold">Dónde encontrarnos</Text>
-          <Link href="https://maps.app.goo.gl/ox1q4PmWwSCKskn9A" isExternal target="_blank" rel="noopener noreferrer"> 
-          <Flex align="center"><Icon as={FaMapMarkerAlt} mr={2} /> Calle Ficticia 123, Valdivia</Flex>
+          <Link href="https://maps.app.goo.gl/ox1q4PmWwSCKskn9A" isExternal target="_blank" rel="noopener noreferrer">
+            <Flex align="center"><Icon as={FaMapMarkerAlt} mr={2} /> kilometro 8, Valdivia</Flex>
           </Link>
-          <Text>Horario de atención: Lunes a Viernes, 10:00 - 18:00 hrs</Text>
+          <Text>Horario de servicio: <br />
+            Sabado 19:00 - 21:00 hrs <br />
+            Domingo 11:00 - 14:00 hrs <br />
+          </Text>
         </Stack>
 
         {/* Grupos y tiempos */}

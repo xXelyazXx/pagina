@@ -12,7 +12,7 @@ const Header = () => {
         <Link href="/">
           <Image src="fvniglesia.png" alt="Logo" boxSize="70px" />
         </Link>
-        <Drawer.Root open={open} onOpenChange={(e) => setOpen(e.open)}>
+        {/* <Drawer.Root open={open} onOpenChange={(e) => setOpen(e.open)}>
           <Drawer.Trigger asChild>
             <Button variant="outline" size="sm">
               <GiHamburgerMenu />
@@ -41,7 +41,7 @@ const Header = () => {
               </Drawer.Content>
             </Drawer.Positioner>
           </Portal>
-        </Drawer.Root>
+        </Drawer.Root> */}
       </Flex>
     </Box>
   );

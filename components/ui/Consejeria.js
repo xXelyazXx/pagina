@@ -39,10 +39,13 @@ export default function Consejeria() {
                     </Box>
                 </Card.Root>
 
-                <Card.Root flexDirection="row" overflow="hidden" maxW="lx">
+                <Card.Root 
+                flexDirection="column" 
+                overflow="hidden" 
+                maxW="lx">
                     <Image
                         objectFit="cover"
-                        maxW="250px"
+                        maxW="100%"
                         src="paisaje1.jpeg"
                         alt="paisaje"
                     />
