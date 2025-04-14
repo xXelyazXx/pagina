@@ -9,7 +9,7 @@ export default function Bienvenida() {
             <Box className="grid-container" p={4}>
                 <Link href="/nuestro_colegio">
                     <Box className="card" p={4} borderRadius="lg" boxShadow="sm">
-                        <Text>¿Eres nuevo en FVN?</Text>
+                        <Text>¿Nuevo en FVN?</Text>
                     </Box>
                 </Link>
                 <Link href="/servicios">
@@ -17,12 +17,16 @@ export default function Bienvenida() {
                         <Text>Horarios de servicios</Text>
                     </Box>
                 </Link>
-                <Box className="card" p={4} borderRadius="lg" boxShadow="sm">
-                    <Text>Te espera un grupo de vida</Text>
-                </Box>
-                <Box className="card" p={4} borderRadius="lg" boxShadow="sm">
-                    <Text>Donaciones</Text>
-                </Box>
+                <Link href="/grupos_vida">
+                    <Box className="card" p={4} borderRadius="lg" boxShadow="sm">
+                        <Text>Te espera un grupo de vida</Text>
+                    </Box>
+                </Link>
+                <Link href="/ofrendas">
+                    <Box className="card" p={4} borderRadius="lg" boxShadow="sm">
+                        <Text>Donaciones</Text>
+                    </Box>
+                </Link>
             </Box>
         </div>
     );
