@@ -28,7 +28,7 @@ const Footer = () => {
         <Stack spacing={3}>
           <Text fontSize="lg" fontWeight="bold">Dónde encontrarnos</Text>
           <Link href="https://maps.app.goo.gl/ox1q4PmWwSCKskn9A" isExternal target="_blank" rel="noopener noreferrer">
-            <Flex align="center"><Icon as={FaMapMarkerAlt} mr={2} /> kilometro 8, Valdivia</Flex>
+            <Flex align="center"><Icon as={FaMapMarkerAlt} mr={2} /> kilometro 8.5, Valdivia</Flex>
           </Link>
           <Text>Horario de servicio: <br />
             Sabado 19:00 - 21:00 hrs <br />

@@ -48,9 +48,11 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const images = [
-    "paisaje1.jpeg",
-    "paisaje2.jpeg",
-    "paisaje3.jpg",
+    "/portada/GRÁFICAS TRANSMISIÓN (1).png",
+    "/portada/GRÁFICAS TRANSMISIÓN (2).png",
+    "/portada/GRÁFICAS TRANSMISIÓN (3).png",
+    "/portada/GRÁFICAS TRANSMISIÓN (4).png",
+    "/portada/GRÁFICAS TRANSMISIÓN.png"
 ];
 
 export default function Anuncios() {
@@ -60,14 +62,14 @@ export default function Anuncios() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 8000,
+        autoplaySpeed: 2500, // Cambia cada 2 segundos
         arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
     };
 
     return (
-        <Box maxW="100%" mx="auto" mt={5} borderRadius="lg" overflow="hidden" position="relative" className="carousel-container">
+        <Box maxW="80%" mx="auto" mt={5} borderRadius="4xl" overflow="hidden" position="relative" className="carousel-container">
             <Slider {...settings}>
                 {images.map((src, index) => (
                     <Box key={index} display="flex" justifyContent="center" className="carousel-item">
@@ -79,3 +81,34 @@ export default function Anuncios() {
     );
 }
 
+// import { Box, Image } from "@chakra-ui/react";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
+
+// const images = [
+//   "paisaje1.jpeg",
+//   "paisaje2.jpeg",
+//   "paisaje3.jpg",
+// ];
+
+// export default function Anuncios() {
+//   const settings = {
+//     dots: false,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     autoplay: true,
+//   };
+
+//   return (
+//     <Box mb={10}>
+//       <Slider {...settings}>
+//         {images.map((src, index) => (
+//           <Image key={index} src={src} alt={`slide-${index}`} />
+//         ))}
+//       </Slider>
+//     </Box>
+//   );
+// }

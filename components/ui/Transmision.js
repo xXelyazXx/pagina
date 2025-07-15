@@ -4,9 +4,9 @@ import { Image, Box, Text, Float } from "@chakra-ui/react";
 export default function Transmision() {
     return (
         <div className="container-Transmision">
-            <Box maxW="96%" mx="auto" mt={5} borderRadius="lg" overflow="hidden" position="relative" display="inline-block">
+            <Box maxW="80%" mx="auto" mt={5} borderRadius="4xl" overflow="hidden" position="relative" display="inline-block">
                 <a href="https://www.youtube.com/@FVNIglesia/streams" target="_blank" rel="noopener noreferrer">
-                    <Image src="paisaje1.jpeg" alt="paisaje1" />
+                    <Image src="/transmision/transmision.jpg" alt="paisaje1" />
                 </a>
                 <Box
                     position="absolute"

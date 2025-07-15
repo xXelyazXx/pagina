@@ -17,11 +17,13 @@ export default function Consejeria() {
                 <Card.Root
                     flexDirection="column"
                     overflow="hidden"
-                    maxW="lx">
+                    maxW="lx"
+                    borderRadius="4xl"
+                >
                     <Image
                         objectFit="cover"
                         maxW="100%"
-                        src="paisaje1.jpeg"
+                        src="/consejeria/consejeria.jpg"
                         alt="paisaje"
                     />
                     <Box>
@@ -30,7 +32,7 @@ export default function Consejeria() {
                                 Consejeria
                             </Card.Title>
                             <Card.Description>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec libero lacinia tempus. Nullam nec purus nec libero lacinia tempus. Nullam nec purus nec libero lacinia tempus. Nullam nec purus nec libero lacinia tempus.
+                                Si necesitas un tiempo de conversación, agenda una cita pastoral. Estamos para acompañarte bajo los principios de la palabra
                             </Card.Description>
                         </Card.Body>
                         <Card.Footer>
@@ -39,14 +41,16 @@ export default function Consejeria() {
                     </Box>
                 </Card.Root>
 
-                <Card.Root 
-                flexDirection="column" 
-                overflow="hidden" 
-                maxW="lx">
+                <Card.Root
+                    flexDirection="column"
+                    overflow="hidden"
+                    maxW="lx"
+                    borderRadius="4xl"
+                >
                     <Image
                         objectFit="cover"
                         maxW="100%"
-                        src="paisaje1.jpeg"
+                        src="/oracion/oracion.jpg"
                         alt="paisaje"
                     />
                     <Box>
@@ -55,7 +59,7 @@ export default function Consejeria() {
                                 Oracion
                             </Card.Title>
                             <Card.Description>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus nec libero lacinia tempus. Nullam nec purus nec libero lacinia tempus. Nullam nec purus nec libero lacinia tempus. Nullam nec purus nec libero lacinia tempus.
+                                ¿Necesitas oración?. Nuestro equipo quiere leer tu petición, favor escríbenos
                             </Card.Description>
                         </Card.Body>
                         <Card.Footer>
