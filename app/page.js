@@ -3,6 +3,7 @@ import Anuncios from "@/components/ui/Anuncios";
 import Bienvenida from "@/components/ui/Bienvenida";
 import Transmision from "@/components/ui/Transmision";
 import Consejeria from "@/components/ui/Consejeria";
+import Colegio from "@/components/ui/Colegio";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
       </div>
       <div className="container-Consejeria">
         <Consejeria />
+      </div>
+      <div>
+        <Colegio />
       </div>
     </div>
   );

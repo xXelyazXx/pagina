@@ -48,11 +48,11 @@ const PrevArrow = ({ onClick }) => {
 };
 
 const images = [
-    "/portada/GRÁFICAS TRANSMISIÓN (1).png",
-    "/portada/GRÁFICAS TRANSMISIÓN (2).png",
-    "/portada/GRÁFICAS TRANSMISIÓN (3).png",
-    "/portada/GRÁFICAS TRANSMISIÓN (4).png",
-    "/portada/GRÁFICAS TRANSMISIÓN.png"
+    "/portada/graficaTransmision1.png",
+    "/portada/graficaTransmision2.png",
+    "/portada/graficaTransmision3.png",
+    "/portada/graficaTransmision4.png",
+    "/portada/graficaTransmision.png"
 ];
 
 export default function Anuncios() {

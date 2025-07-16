@@ -4,11 +4,6 @@ import { SimpleGrid, Box, Image, Card, Button, Text } from "@chakra-ui/react";
 export default function Consejeria() {
     return (
         <div>
-            <Box margin="2rem">
-                <Text fontSize="2xl">
-                    Oramos por ti
-                </Text>
-            </Box>
             <SimpleGrid
                 columns={{ base: 1, md: 2 }}
                 gap={5}

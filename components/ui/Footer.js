@@ -31,18 +31,18 @@ const Footer = () => {
             <Flex align="center"><Icon as={FaMapMarkerAlt} mr={2} /> kilometro 8.5, Valdivia</Flex>
           </Link>
           <Text>Horario de servicio: <br />
-            Sabado 19:00 - 21:00 hrs <br />
-            Domingo 11:00 - 14:00 hrs <br />
+            Sabado 18:00 Hrs <br />
+            Domingo 11:00 hrs <br />
           </Text>
         </Stack>
 
         {/* Grupos y tiempos */}
         <Stack spacing={3}>
           <Text fontSize="lg" fontWeight="bold">Grupos de vida</Text>
-          <Text>GDV Mujeres: Miercoles</Text>
-          <Text>GDV Hombres: Jueves</Text>
-          <Text>GDV Jóvenes: Viernes </Text>
-          <Text>GDV Tweens/youth: Sábados</Text>
+          <Text>Mujeres: Miercoles 19:30 Hrs</Text>
+          <Text>Hombres: Jueves 19:30 Hrs</Text>
+          <Text>Jóvenes: Viernes 19:30 Hrs</Text>
+          <Text>Tweens/youth: Sábados 15:00 Hrs</Text>
         </Stack>
       </SimpleGrid>
     </Box>
