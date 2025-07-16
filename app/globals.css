@@ -47,7 +47,7 @@ button {
 }
 
 button:hover {
-  background-color: #dedede !important;
+  background-color: #ffffff !important;
 }
 
 /* Header */
@@ -172,4 +172,8 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 1rem;
+}
+
+.texto-oscuro{
+  color: #000000;
 }
