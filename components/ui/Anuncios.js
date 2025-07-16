@@ -22,7 +22,7 @@ const NextArrow = ({ onClick }) => {
             height="50px"
             _hover={{ bg: "rgba(0, 0, 0, 0.7)" }}
         >
-            <FaChevronRight size={20}/>
+            <FaChevronRight size={20} />
         </IconButton>
     );
 };
@@ -42,16 +42,16 @@ const PrevArrow = ({ onClick }) => {
             height="50px"
             _hover={{ bg: "rgba(0, 0, 0, 0.7)" }}
         >
-            <FaChevronLeft size={20}/>
+            <FaChevronLeft size={20} />
         </IconButton>
     );
 };
 
 const images = [
+    "/portada/graficaTransmision4.png",
     "/portada/graficaTransmision1.png",
     "/portada/graficaTransmision2.png",
     "/portada/graficaTransmision3.png",
-    "/portada/graficaTransmision4.png",
     "/portada/graficaTransmision.png"
 ];
 
@@ -62,14 +62,25 @@ export default function Anuncios() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2500, // Cambia cada 2 segundos
+        autoplaySpeed: 3500, // 1000 = 1 segundo
         arrows: true,
         nextArrow: <NextArrow />,
         prevArrow: <PrevArrow />,
     };
 
     return (
-        <Box maxW="80%" mx="auto" mt={5} borderRadius="4xl" overflow="hidden" position="relative" className="carousel-container">
+        <Box
+            w={{ base: "100%", sm: "90%", md: "85%", lg: "80%" }}
+            maxW="1200px"
+            aspectRatio="16/9"
+            mx="auto"
+            mt={5}
+            my={4}
+            mb={10}
+            borderRadius="4xl"
+            overflow="hidden"
+            position="relative"
+            className="carousel-container">
             <Slider {...settings}>
                 {images.map((src, index) => (
                     <Box key={index} display="flex" justifyContent="center" className="carousel-item">

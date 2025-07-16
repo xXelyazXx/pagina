@@ -68,48 +68,6 @@ body {
 
 /*Bienvenida*/
 
-.imagenes-bienvenida {
-  position: relative;
-  overflow: hidden;
-}
-
-.imagenes-bienvenida::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0.5) 60%,
-    rgba(0, 0, 0, 0.7) 80%,
-    rgba(0, 0, 0, 0.9) 100%
-  );
-  pointer-events: none;
-  z-index: 1;
-  transition: opacity 0.3s ease;
-}
-
-.imagenes-bienvenida:hover::before {
-  opacity: 0.8;
-}
-
-/* Alternativa más directa */
-.imagenes-bienvenida {
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.2) 30%,
-    rgba(0, 0, 0, 0.5) 60%,
-    rgba(0, 0, 0, 0.7) 80%,
-    rgba(0, 0, 0, 0.9) 100%
-  );
-  background-blend-mode: multiply;
-}
-
 .container-bienvenida {
   display: flex;
   justify-content: center;
@@ -194,11 +152,4 @@ body {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-
-/* colegio */
-
-.Imagen-Colegio{
-  padding: 1.3rem;
-  gap: 2rem;
 }

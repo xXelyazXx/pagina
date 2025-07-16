@@ -10,7 +10,21 @@ export default function Bienvenida() {
 
                 {/* nuevo en fvn */}
                 <Link href="/nuestro_colegio">
-                    <Box className="card" borderRadius="4xl" overflow="hidden" position="relative" display="flex" aspectRatio={"3/4"} w={{ base: '90vw', sm: '360px', md: '360px' }} maxW="400px" minW="220px" m="0 auto" p={0} justifyContent="center" alignItems="center">
+                    <Box
+                        className="card"
+                        borderRadius="4xl"
+                        overflow="hidden"
+                        position="relative"
+                        display="flex"
+                        aspectRatio={"3/4"}
+                        w={{ base: '75vw', sm: '360px', md: '360px' }}
+                        maxW="400px"
+                        minW="220px"
+                        m="0 auto"
+                        p={0}
+                        justifyContent="center"
+                        alignItems="center"
+                    >
                         <Image src="/nuevoFVN/presentacion.jpg" alt="nuevo en fvn" w="100%" h="100%" objectFit="cover" position="absolute" top={0} left={0} zIndex={0} />
                         <Image src="/degradado.png" alt="grupo de vida" w="100%" h="100%" objectFit="cover" position="absolute" top={0} left={0} zIndex={0} />
                         <Box
@@ -39,7 +53,7 @@ export default function Bienvenida() {
                         overflow="hidden"
                         position="relative"
                         aspectRatio={"3/4"}
-                        w={{ base: '90vw', sm: '360px', md: '360px' }}
+                        w={{ base: '75vw', sm: '360px', md: '360px' }}
                         maxW="400px"
                         minW="220px"
                         m="0 auto"
@@ -70,7 +84,21 @@ export default function Bienvenida() {
 
                 {/* ofrendas */}
                 <Link href="/ofrendas">
-                    <Box className="card" borderRadius="4xl" overflow="hidden" position="relative" display="flex" aspectRatio={"3/4"} w={{ base: '90vw', sm: '360px', md: '360px' }} maxW="400px" minW="220px" m="0 auto" p={0} justifyContent="center" alignItems="center">
+                    <Box
+                        className="card"
+                        borderRadius="4xl"
+                        overflow="hidden"
+                        position="relative"
+                        display="flex"
+                        aspectRatio={"3/4"}
+                        w={{ base: '75vw', sm: '360px', md: '360px' }}
+                        maxW="400px"
+                        minW="220px"
+                        m="0 auto"
+                        p={0}
+                        justifyContent="center"
+                        alignItems="center"
+                    >
                         <Image src="/ofrendas/ofrendas.jpg" alt="donaciones" w="100%" h="100%" objectFit="cover" position="absolute" top={0} left={0} zIndex={0} />
                         <Image src="/degradado.png" alt="grupo de vida" w="100%" h="100%" objectFit="cover" position="absolute" top={0} left={0} zIndex={0} />
                         <Box

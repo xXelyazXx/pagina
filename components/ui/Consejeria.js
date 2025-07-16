@@ -9,6 +9,7 @@ export default function Consejeria() {
                 gap={5}
                 margin="1.1rem"
             >
+                {/* Consejeria */}
                 <Card.Root
                     flexDirection="column"
                     overflow="hidden"
@@ -36,6 +37,7 @@ export default function Consejeria() {
                     </Box>
                 </Card.Root>
 
+                {/* Oracion */}
                 <Card.Root
                     flexDirection="column"
                     overflow="hidden"
