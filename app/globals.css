@@ -22,12 +22,32 @@
   --foreground: #dadada;
   --base-font-size: 1.2rem;
   --font-family-main: 'Figtree-VariableFont_wght.ttf', sans-serif;
+  --text-color: #ffffff;
+  --card-bg: #ffffff;
+  --card-text: #000000;
+  --header-bg: #ffffff;
+  --header-text: #ffffff;
 }
 
 body {
-  background-color: var(--background);
+  background-color: #dadada !important;
+  color: #fbfbfb !important;
   font-family: var(--font-family-main);
   font-size: var(--base-font-size);
+}
+
+/* Forzar colores específicos para evitar cambios de modo */
+* {
+  color: #ffffff !important;
+}
+
+/* Botones específicos */
+button {
+  color: #000000 !important;
+}
+
+button:hover {
+  background-color: #dedede !important;
 }
 
 /* Header */
@@ -39,7 +59,7 @@ body {
 /* Anuncios */
 
 .container-Anuncios {
-  background-color: var(--foreground);
+  background-color: #dadada;
   padding: 1.3rem;
   gap: 2rem;
 }
