@@ -37,18 +37,18 @@ body {
 }
 
 /* Forzar colores específicos para evitar cambios de modo */
+/* problemas con el form_oracion porque el fondo es blanco 
+y las letras tienen que se negras
 * {
-  color: #ffffff !important;
+  color: #ffffff !important; // Color de texto blanco
 }
+*/
 
 /* Botones específicos */
 button {
   color: #000000 !important;
 }
 
-button:hover {
-  background-color: #ffffff !important;
-}
 
 /* Header */
 

@@ -42,7 +42,7 @@ const Header = () => {
           <Drawer.Root open={open} onOpenChange={(e) => setOpen(e.open)} placement="top">
             <Drawer.Trigger asChild>
               <Button variant="outline" size="md" p={3} w="60px" h="50px">
-                <GiHamburgerMenu size={20}/>
+                <Text color={"white"}><GiHamburgerMenu size={20}/></Text>
               </Button>
             </Drawer.Trigger>
             <Portal>

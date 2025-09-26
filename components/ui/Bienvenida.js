@@ -46,7 +46,7 @@ export default function Bienvenida() {
                 </Link>
 
                 {/* grupos de vida */}
-                <Link href="/grupos_vida">
+                <Link href="/form_GDV">
                     <Box
                         className="card"
                         borderRadius="4xl"

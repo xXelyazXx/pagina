@@ -1,5 +1,6 @@
 "use client";
 import { SimpleGrid, Box, Image, Card, Button, Text } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Consejeria() {
     return (
@@ -32,7 +33,7 @@ export default function Consejeria() {
                             </Card.Description>
                         </Card.Body>
                         <Card.Footer>
-                            <Button>agenda tu hora</Button>
+                            <Button>Agenda tu hora</Button>
                         </Card.Footer>
                     </Box>
                 </Card.Root>
@@ -60,7 +61,9 @@ export default function Consejeria() {
                             </Card.Description>
                         </Card.Body>
                         <Card.Footer>
-                            <Button>Hablanos sobre tu oracion</Button>
+                            <Link href="/form_oracion">
+                                <Button>Hablanos sobre tu oración</Button>
+                            </Link>
                         </Card.Footer>
                     </Box>
                 </Card.Root>
