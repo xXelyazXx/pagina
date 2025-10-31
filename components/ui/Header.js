@@ -25,7 +25,7 @@ const Header = () => {
               <Text textTransform="uppercase" fontSize={{ base: "0.7rem", md: "1rem" }} isTruncated>Horarios de servicios</Text>
             </Box>
           </Link>
-          <Link href="/grupos_vida">
+          <Link href="/form_GDV">
             <Box className="card-Header" p={2} minW={0}>
               <Text textTransform="uppercase" fontSize={{ base: "0.7rem", md: "1rem" }} isTruncated>Te espera un grupo de vida</Text>
             </Box>

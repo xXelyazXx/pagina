@@ -140,7 +140,7 @@ export default function InscriptionForm() {
             Inscripción a Grupos de Vida
           </Heading>
           <Text fontSize="md" color={"black"}>
-            Complete el siguiente formulario para inscribirse a nuestros Grupos de Vida
+            Complete el siguiente formulario para inscribirse a nuestros Grupos de Vida y un lider se contactará con usted.
           </Text>
         </Box>
 
