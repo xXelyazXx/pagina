@@ -9,7 +9,7 @@ export default function Bienvenida() {
             <Box className="grid-container" p={0} m="0 auto" justifyContent="center" alignItems="center">
 
                 {/* nuevo en fvn */}
-                <Link href="/nuestro_colegio">
+                <Link href="/sobre_nosotros">
                     <Box
                         className="card"
                         borderRadius="4xl"

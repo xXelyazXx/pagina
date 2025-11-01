@@ -172,7 +172,7 @@ export default function Page() {
                                     RUT
                                 </Text>
                                 <Text fontSize="lg" color="gray.800" fontWeight="medium">
-                                    12.345.678-9
+                                    65.040.636-2
                                 </Text>
                             </Box>
 
@@ -182,7 +182,7 @@ export default function Page() {
                                     Nombre del Titular
                                 </Text>
                                 <Text fontSize="lg" color="gray.800" fontWeight="medium">
-                                    Iglesia Ejemplo
+                                    Fuente de Vida para las Naciones
                                 </Text>
                             </Box>
 
@@ -192,7 +192,7 @@ export default function Page() {
                                     Banco
                                 </Text>
                                 <Text fontSize="lg" color="gray.800" fontWeight="medium">
-                                    Banco de Chile
+                                    Banco Santander
                                 </Text>
                             </Box>
 
@@ -212,7 +212,7 @@ export default function Page() {
                                     Número de Cuenta
                                 </Text>
                                 <Text fontSize="lg" color="gray.800" fontWeight="medium">
-                                    1234567890
+                                    67600649
                                 </Text>
                             </Box>
 

@@ -15,7 +15,7 @@ const Header = () => {
 
         {/* Menú para pantallas grandes */}
         <Flex flexWrap="wrap" gap={10} align="center" display={{ base: "none", md: "flex" }} mr={8}>
-          <Link href="/nuestro_colegio">
+          <Link href="/sobre_nosotros">
             <Box className="card-Header" p={2} minW={0}>
               <Text textTransform="uppercase" fontSize={{ base: "0.7rem", md: "1rem" }} isTruncated>¿Nuevo en FVN?</Text>
             </Box>
@@ -65,7 +65,7 @@ const Header = () => {
                   </Drawer.Header>
                   <Drawer.Body display="flex" justifyContent="center" alignItems="center" flex="1">
                     <Flex direction="column" gap={12} w="80%" maxW="300px" align="center">
-                      <Link href="/nuestro_colegio" w="100%">
+                      <Link href="/sobre_nosotros" w="100%">
                         <Button
                           w="100%"
                           size="lg"
@@ -93,7 +93,7 @@ const Header = () => {
                           Horarios de servicios
                         </Button>
                       </Link>
-                      <Link href="/grupos_vida" w="100%">
+                      <Link href="/form_GDV" w="100%">
                         <Button
                           w="100%"
                           size="lg"
