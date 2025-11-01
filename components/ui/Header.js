@@ -1,7 +1,8 @@
 "use client"
-import { Box, Flex, Image, Link, Drawer, Button, Portal, CloseButton, Text } from "@chakra-ui/react";
+import { Box, Flex, Image, Link, Drawer, Button, Portal, CloseButton, Text, MenuRoot, MenuTrigger, MenuContent, MenuItem } from "@chakra-ui/react";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { FaChevronDown } from "react-icons/fa";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -15,11 +16,37 @@ const Header = () => {
 
         {/* Menú para pantallas grandes */}
         <Flex flexWrap="wrap" gap={10} align="center" display={{ base: "none", md: "flex" }} mr={8}>
-          <Link href="/sobre_nosotros">
-            <Box className="card-Header" p={2} minW={0}>
-              <Text textTransform="uppercase" fontSize={{ base: "0.7rem", md: "1rem" }} isTruncated>¿Nuevo en FVN?</Text>
-            </Box>
-          </Link>
+          {/* Menú desplegable para ¿Nuevo en FVN? */}
+          <MenuRoot>
+            <MenuTrigger asChild>
+              <Button
+                variant="ghost"
+                className="card-Header"
+                p={2}
+                minW={0}
+                rightIcon={<FaChevronDown size={12} />}
+                
+                _hover={{ bg: "transparent" }}
+              >
+                <Text color="white" textTransform="uppercase" fontSize={{ base: "0.7rem", md: "1rem" }}>
+                  ¿Nuevo en FVN?
+                </Text>
+              </Button>
+            </MenuTrigger>
+            <MenuContent>
+              <MenuItem asChild>
+                <Link href="/sobre_nosotros" _hover={{ textDecoration: "none" }}>
+                  <Text color="white">Sobre Nosotros</Text>
+                </Link>
+              </MenuItem>
+              <MenuItem asChild>
+                <Link href="/equipo_pastoral" _hover={{ textDecoration: "none" }}>
+                  <Text color="white">Equipo Pastoral</Text>
+                </Link>
+              </MenuItem>
+            </MenuContent>
+          </MenuRoot>
+
           <Link href="/servicios">
             <Box className="card-Header" p={2} minW={0}>
               <Text textTransform="uppercase" fontSize={{ base: "0.7rem", md: "1rem" }} isTruncated>Horarios de servicios</Text>
@@ -65,20 +92,40 @@ const Header = () => {
                   </Drawer.Header>
                   <Drawer.Body display="flex" justifyContent="center" alignItems="center" flex="1">
                     <Flex direction="column" gap={12} w="80%" maxW="300px" align="center">
-                      <Link href="/sobre_nosotros" w="100%">
-                        <Button
-                          w="100%"
-                          size="lg"
-                          bg="transparent"
-                          border="2px solid white"
-                          color="white !important"
-                          _hover={{ bg: "white", color: "black !important" }}
-                          onClick={() => setOpen(false)}
-                          sx={{ color: "white !important" }}
-                        >
-                            ¿Nuevo en FVN?
-                        </Button>
-                      </Link>
+                      {/* Submenú ¿Nuevo en FVN? en móvil */}
+                      <Flex direction="column" gap={4} w="100%">
+                        <Text fontSize="lg" fontWeight="bold" color="white" textAlign="center" mb={2}>
+                          ¿Nuevo en FVN?
+                        </Text>
+                        <Link href="/sobre_nosotros" w="100%">
+                          <Button
+                            w="100%"
+                            size="md"
+                            bg="transparent"
+                            border="1px solid white"
+                            color="white !important"
+                            _hover={{ bg: "white", color: "black !important" }}
+                            onClick={() => setOpen(false)}
+                            sx={{ color: "white !important" }}
+                          >
+                            Sobre Nosotros
+                          </Button>
+                        </Link>
+                        <Link href="/equipo_pastoral" w="100%">
+                          <Button
+                            w="100%"
+                            size="md"
+                            bg="transparent"
+                            border="1px solid white"
+                            color="white !important"
+                            _hover={{ bg: "white", color: "black !important" }}
+                            onClick={() => setOpen(false)}
+                            sx={{ color: "white !important" }}
+                          >
+                            Equipo Pastoral
+                          </Button>
+                        </Link>
+                      </Flex>
                       <Link href="/servicios" w="100%">
                         <Button
                           w="100%"
