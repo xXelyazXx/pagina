@@ -6,7 +6,7 @@ export default function Page() {
     const pastores = [
         {
             id: 1,
-            nombre: "Pastores Gerardo y Patricia",
+            nombre: "Pastores Gerardo y Patricia si",
             imagen: "/pastores/IMG-20250528-WA0012.jpg",
             descripcion: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
         },
